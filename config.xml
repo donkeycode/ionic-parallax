@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.donkeycode.ionic-init" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>Init ionic</name>
+  <name>Parralax ionic</name>
   <description>
-        ionic-init
+        Parralax ionic
   </description>
   <author email="cedric@donkeycode.com" href="http://donkeycode.com/">
-      Cedric LOMBARDOT
+      DonkeyCode
   </author>
   <content src="index.html"/>
   <access origin="*"/>
-  <access origin="tel:*" launch-external="yes"/>
-  <access origin="mailto:*" launch-external="yes"/>
+  <access launch-external="yes" origin="tel:*"/>
+  <access launch-external="yes" origin="mailto:*"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
@@ -20,8 +20,12 @@
   <preference name="StatusBarStyle" value="lightcontent"/>
   <preference name="AndroidLaunchMode" value="singleTask"/>
   <preference name="AutoHideSplashScreen" value="false"/>
+  <preference name="xwalkVersion" value="15+"/>
+  <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect"/>
+  <preference name="xwalkMode" value="embedded"/>
+  <preference name="xwalkMultipleApk" value="true"/>
   <feature name="StatusBar">
-    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+    <param name="ios-package" onload="true" value="CDVStatusBar"/>
   </feature>
   <platform name="android">
     <icon src="resources/android/icon/drawable-ldpi-icon.png" density="ldpi"/>
@@ -71,5 +75,5 @@
     <splash src="resources/ios/splash/Default@2x~iphone.png" width="640" height="960"/>
     <splash src="resources/ios/splash/Default~iphone.png" width="320" height="480"/>
   </platform>
-  <icon src="resources/ios/icon/icon-small@3x.png"/>
+  <icon src="resources/android/icon/drawable-xhdpi-icon.png"/>
 </widget>

@@ -75,4 +75,3 @@ ionic plugin add org.apache.cordova.statusbar
 ````
 gulp dev
 ````
-# ionic-parallax

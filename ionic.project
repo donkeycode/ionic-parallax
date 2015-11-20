@@ -1,8 +1,7 @@
 {
-  "name": "ionic-init",
+  "name": "parallax-ionic",
   "app_id": "",
-  "gulpStartupTasks": [
-  ],
+  "gulpStartupTasks": [],
   "watchPatterns": [
     "www/**/*"
   ],
@@ -10,7 +9,7 @@
     {
       "platform": "android",
       "browser": "crosswalk",
-      "version": "11.40.277.1"
+      "version": "12.41.296.5"
     }
   ]
 }

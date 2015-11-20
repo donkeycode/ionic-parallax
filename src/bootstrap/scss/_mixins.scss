@@ -1,0 +1,13 @@
+@mixin transform($effect) {
+    -webkit-transform: $effect;
+       -moz-transform: $effect;
+         -o-transform: $effect;
+            transform: $effect;
+}
+
+@mixin perspective($value) {
+    -webkit-perspective: $value;
+       -moz-perspective: $value;
+         -o-perspective: $value;
+            perspective: $value;
+}

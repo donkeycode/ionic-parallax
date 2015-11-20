@@ -11,9 +11,9 @@ function runApp($ionicPlatform, $log, dcToolsPushwoosh, $timeout) {
             StatusBar.styleLightContent();
         }
 
-        if (window.cordova && window.plugins.pushNotification) {
-            dcToolsPushwoosh.registerListener();
-        }
+        // if (window.cordova && window.plugins.pushNotification) {
+        //     dcToolsPushwoosh.registerListener();
+        // }
 
         if (window.cordova) {
             $timeout(function hideSplashScreen() {

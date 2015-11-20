@@ -1,6 +1,7 @@
-// @import "mixin";
-@import "variables";
-// @import "fonts";
+@import "scss/mixins";
+@import "scss/variables";
 
 @import "../../bower_components/ionic/scss/ionic";
 @import "../../bower_components/donkeycode-ionic-tools/scss/tools";
+
+@import "../home/module.scss";

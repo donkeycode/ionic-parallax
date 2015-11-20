@@ -1,0 +1,80 @@
+#test-1 {
+    .parallax {
+        perspective: 3px;
+        height: 100vh;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .parallax__layer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 0 100vh;
+    }
+
+    // ratio Scale: 1 + (translateZ * -1) / perspective
+    .parallax__layer--base {
+        transform: translateZ(0);
+    }
+    .parallax__layer--middle {
+        transform: translateZ(-1px) scale(0.67);
+    }
+    .parallax__layer--back {
+        transform: translateZ(-2px) scale(1.5);
+    }
+
+    #container {
+        background: #00acff;
+    }
+
+    #background {
+        background: url('../img/parallax/back.png');
+        background-repeat: repeat-x;
+        background-position: 0 100%;
+        width: 1500px;
+        padding: 0;
+    }
+
+    #grass {
+        background: url('../img/parallax/grass.png');
+        background-repeat: repeat-x;
+        background-position: 0 100%;
+        padding: 0;
+        width: 1250px;
+    }
+
+    #nuage-01 img {
+        position: relative;
+        bottom: 50vh;
+    }
+
+    #nuage-02 {
+        transform: translateZ(-5px) scale(1.8);
+        img {
+            position: relative;
+            bottom: 50vh;
+        }
+    }
+
+    #nuage-03 {
+        transform: translateZ(-6px);
+        img {
+            position: relative;
+            right: 80vh;
+            bottom: 60vh;
+        }
+    }
+
+    #parallax-content {
+        padding: 0;
+        width: 1000px;
+        font-size: 200%;
+        p {
+            position: relative;
+            top: 30vh;
+        }
+    }
+}

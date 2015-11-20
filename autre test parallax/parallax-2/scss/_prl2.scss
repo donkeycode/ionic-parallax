@@ -1,0 +1,17 @@
+#test-4 {
+    .parallax {
+        perspective: 3px;
+        height: 100%;
+        //overflow-y: hidden;
+        //overflow-x: auto;
+    }
+
+    #fresque-bg {
+        background: url('../img/parallax/back.png');
+        background-repeat: repeat-x;
+        background-position: 0 100%;
+        width: 1500px;
+        height:500px;
+    }
+
+}

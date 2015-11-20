@@ -1,0 +1,120 @@
+.sky {
+    background: #00acff;
+}
+.parallax {
+    @include perspective(5px);
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: auto;
+
+    background: url('../img/home/back.png');
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 100vh;
+}
+
+#background {
+    background: url('../img/home/back.png');
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    width: 1500px;
+    padding: 0;
+}
+
+#grass {
+    @include transform(translateZ(-1px) scale(1.3));
+    img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 1327px;
+    }
+}
+
+#nuage-01 {
+    @include transform(translateZ(-2px) scale(0.6));
+    img {
+        position: relative;
+        bottom: 20vh;
+    }
+}
+
+#nuage-02 {
+    @include transform(translateZ(-3px) scale(0.8));
+    img {
+        position: relative;
+        bottom: 30vh;
+    }
+}
+
+#nuage-03 {
+    @include transform(translateZ(-4px) scale(1));
+    img {
+        position: relative;
+        right: 80vh;
+        bottom: 40vh;
+    }
+}
+
+#nuage-04 {
+    @include transform(translateZ(-3px) scale(0.8));
+    img {
+        position: relative;
+        left: 50vh;
+        bottom: 15vh;
+    }
+}
+
+#nuage-05 {
+    @include transform(translateZ(-4px) scale(1));
+    img {
+        position: relative;
+        left: 70vh;
+        bottom: 25vh;
+    }
+}
+
+#path {
+    @include transform(translateZ(-4px) scale(1));
+    img {
+        position: absolute;
+        bottom: 30vh;
+        left: 0;
+    }
+    #elements-clickable-container {
+        position: absolute;
+        bottom: 30vh;
+        left: 0;
+        //mm taille que image
+        width: 1500px;
+        height: 206px;
+        .element-clickable {
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #level-01 {
+            background: green;
+            top: 80px;
+            left: 121px;
+        }
+        #level-02 {
+            background: pink;
+            top: 150px;
+            left: 296px;
+        }
+    }
+}

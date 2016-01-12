@@ -1,33 +1,18 @@
 <ion-view view-title="Carte du monde">
-    <ion-pane class="sky">
-        <div class="parallax" id="container">
-            <div class="parallax__layer" id="background">
-            </div>
-            <div class="parallax__layer" id="grass">
-                <img src="img/home/grass.png" />
-            </div>
-            <div class="parallax__layer" id="nuage-03">
-                <img src="img/home/cloud1.png" />
-            </div>
-            <div class="parallax__layer" id="nuage-01">
-                <img src="img/home/cloud1.png" />
-            </div>
-            <div class="parallax__layer" id="nuage-02">
-                <img src="img/home/cloud1.png" />
-            </div>
-            <div class="parallax__layer" id="nuage-04">
-                <img src="img/home/cloud1.png" />
-            </div>
-            <div class="parallax__layer" id="nuage-05">
-                <img src="img/home/cloud1.png" />
-            </div>
-            <div class="parallax__layer" id="path">
-                <img src="img/home/path.png" />
-                <div id="elements-clickable-container">
-                    <div class="element-clickable" id="level-01" ng-click="goLevel('01')"></div>
-                    <div class="element-clickable" id="level-02" ng-click="goLevel('02')"></div>
-                </div>
-            </div>
-        </div>
+    <ion-pane>
+      <ion-scroll zooming="true" direction="x" class="parallax" on-swipe-left="onSwipe($event)" on-swipe-right="onSwipe($event)">
+
+          <div class="parallax__layer" id="route"></div>
+          <div class="parallax__layer" id="titles">
+            <img src="img/home/title-osd.png" id="title-osd">
+            <img src="img/home/title-character.png" id="title-character">
+            <img src="img/home/title-instruments.png" id="title-instruments">
+            <img src="img/home/title-history.png" id="title-history">
+            <img src="img/home/title-catalogue.png" id="title-catalogue">
+            <img src="img/home/title-backstage.png" id="title-backstage">
+            <img src="img/home/title-code.png" id="title-code">
+          </div>
+          <div class="parallax__layer" id="background"></div>
+      </ion-scroll>
     </ion-pane>
 </ion-view>
